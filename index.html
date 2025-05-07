@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta charset="UTF-8">
-  <title>RobiT Radio Live</title>
+  <title>Robit Radio Live</title>
   <style>
     body { 
       font-family: sans-serif; 
@@ -21,11 +21,19 @@
   </style>
 </head>
 <body>
-  <h1>🔊 Robit Radio Live</h1>
+  <h1>🔊 RobiT Radio Live</h1>
+
   <audio controls autoplay>
-    <source src="https://robitradio.ddns.net:8000/stream" type="audio/mpeg">
-Robit Radio! Live Streaming from Satellite 5.
-    <a href="https://robitradio.ddns.net:8000/stream">Listen here</a>.
+    <!-- Serve over HTTPS on the default port (443) -->
+    <source src="https://robitradio.ddns.net/stream" type="audio/mpeg">
+    <!-- Fallback text / link for non‑HTML5 browsers -->
+    Your browser doesn’t support HTML5 audio.
+    <a href="https://robitradio.ddns.net/stream" target="_blank">
+      ▶️ Listen here
+    </a>.
   </audio>
+
+  <p>Robit Radio! Live Streaming from Satellite 5.</p>
 </body>
+
 </html>
